@@ -1,16 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="flex">
+<Hits /> 
+<HrStats />
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HrStats from './components/HrStats.vue'
+import Hits from './components/Hits.vue'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+    components: {
+      HrStats,
+      Hits
+    }
 }
 </script>
 
@@ -22,5 +26,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.flex{
+  display:flex;
+  width: 960px;
+  margin-left:auto;
+  margin-right:auto;
 }
 </style>
